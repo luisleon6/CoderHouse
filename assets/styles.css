@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Red Hat Display, sans-serif;
+    background: #000;
+}
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_index_bg.jpeg);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;   
+}
+.menu{
+    width: 100%;
+    margin: 0;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.banner__logo{
+    width: 18% ;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+.banner__logo--res{
+    display: none;
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.menu ul li a.page-active{
+    color: #E5CD8B;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F3E8CA;
+}
+.menu ul li a:hover{
+    color:brown ;
+}
+
+.footer{
+    width: 100%;
+    height: 90px;
+    background:#000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer a{
+    color: #F3E8CA;
+}
+.footer__social{
+    display: inline-flex;
+}
+.footer__social .icon{
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    cursor: pointer;
+}
+.footer__social .icon span{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    z-index: 2;
+    display: block;
+    background: #F3E8CA;
+    border-radius:50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    text-align: center;
+}
+.footer__social .icon span i{
+    font-size: 25px;
+    line-height: 45px;
+    background: none;
+}
+.footer__social .icon .tooltip{
+    position: absolute;
+    top: 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    background: #F3E8CA;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55, 0.265,1.55);
+}
+.footer__social .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+}
+.footer__social .icon .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #F3E8CA;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.footer__pages{
+    font-size: 16px;
+    margin: 15px;
+}
+.footer__pages a{
+    margin: 15px;
+    padding:15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F3E8CA;
+    cursor: pointer;
+}
+.footer__pages a:hover{
+    color: brown
+
+}
+.bannermenu{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_noonmoon.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.bannermenu__navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannermenu__navbar nav {
+    background: none;
+}
+.bannermenu__navbar nav ul#menuList{
+    background: none;
+}
+.bannermenu__navbar-logo{
+    width: 75px;
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.bannermenu__navbar ul li{
+    list-style: none;
+    background: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.bannermenu__navbar ul li a{
+    background:none;
+    color:#F3E8CA;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.bannermenu__navbar ul li a.page-active{
+    text-decoration: none;
+    color:#E5CD8B;
+    text-transform: uppercase;
+}
+.bannermenu__navbar ul li.page-active::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#E5CD8B;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.bannermenu__navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#F3E8CA;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.bannermenu__navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#F3E8CA;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.bannermenu__navbar ul li:hover::after{
+    width: 100%;
+}
+.drinkmen{
+    background: #000;
+    color:#F3E8CA;
+}
+.drinkmen__header{
+    font-size: 32px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.drinkmen__categories h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.drinkmen__categories p{
+    width: 60%;
+    margin-bottom: 35px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bannerloc{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_peachy.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+section .locationbox{
+    color: #F3E8CA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+}
+section .locationbox .locationbox__text{
+    width: 40%;
+    margin: 25px;
+    padding: 50px 75px;
+}
+section .locationbox .locationbox__text h2{
+    margin-bottom: 25px;
+}
+
+
+section .locationbox .locationbox__img img{
+    width: 250px;
+}
+.locationbox__text-border{
+    margin: 25px;
+    border: 5px double #F3E8CA;
+}
+.ourstory{
+    margin: 60px;
+    color:#F3E8CA;
+
+}
+.ourstory h2{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    width: 450px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.4);
+    padding: 10px 20px;
+    box-shadow: border-box;
+    color:#F3E8CA
+}
+.form__header{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+    background: none;
+}
+.form__text{
+    text-align: center;
+    margin-bottom: 25px;
+    background: none;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 400px;
+    max-width: 100%;
+}
+#formulario_enviar{
+    color: #F3E8CA;
+    padding: 20px;
+    font-size: 20px;
+}
+#formulario_enviar:hover{
+    cursor: pointer;
+    color: brown;
+}
+.gallery{
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #000;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat (auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+.vertical{
+    grid-row: span 2;
+}
+.horizontal{
+    grid-column: span 2;
+}
+.amplio{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width:720px){
+    .form{
+        width:100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        font-size: 12px;
+    };
+    .banner__logo{
+        display: none;
+    }
+    .banner__logo--res{
+        display: block;
+        width: 50px;
+        cursor: pointer;
+    }
+    .bannerloc{
+        background-image: none;
+        height: auto;
+    }
+    .bannermenu__navbar-logo{
+        width: 50px;
+        cursor: pointer;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        background:#fff;
+    }
+    .bannermenu__navbar nav ul{
+        display: none;
+    }
+    .bannermenu__navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35px;
+        padding: 0;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .menu_list{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav .menu_list li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav .menu_list li a{
+        color: #fff;
+    } 
+    .footer{
+        display: none
+    }
+    .vertical{
+        grid-row: span 1;
+    }
+    .horizontal{
+        grid-column: span 1;
+    }
+    .amplio{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+   .locationbox__img{
+       display: none;
+   }
+}

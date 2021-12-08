@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Barra de navegacion distinta al index, se incluye logo en la barra misma-->
+    <header class="bannerloc">
+        <div class="bannermenu__navbar">
+            <img class="bannermenu__navbar-logo" src="../img/bar-75_logo.png" alt="Logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../index.html">Bienvenido</a></li>
+                    <li><a href="./nuestra_historia.html">Nuestra Historia</a></li>
+                    <li><a href="./bar_75_menu.html">Bar 75 Menu</a></li>
+                    <li><a href="./horario.html">Horario & Ubicacion</a></li>
+                    <li><a href="./reservaciones.html">Reservaciones</a></li>
+                </ul>
+            </nav>
+            <img src="../img/menu_icon.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </header>
+    <!-- Formulario encapsulado en div para uso posterios dentro de el se adjuntan todos los elementos vistos en el wireframe-->
+    <div>
+        <form class="form" action="">
+            <h2 class="form__header">Contactanos</h2>
+            <p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex quia quod</p>
+                <input type="text" name="nombres" placeholder="Nombre">
+                <input type="text" name="correo" placeholder="Correo">
+                <input type="tel" name="telefono" placeholder="Telefono">
+                <input type="text" name="ayuda" placeholder="En que te podemos ayudar?">
+                <textarea name="mensaje" placeholder="Tu mensaje..." cols="30" rows="10"></textarea>
+                <input id="formulario_enviar" type="submit" value="Enviar">
+        </form>
+    </div>
+    <!--footer generico, se trabajara mas adelante en el para estilarlo conforme a lo que se estipula en el wireframe-->
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaracion de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight= "130px"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
