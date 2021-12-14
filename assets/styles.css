@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Red Hat Display";
-    background: #f2f2f2;
+    background: #07090F;
 }
 header .nav{
     min-height: 80px;
     overflow: hidden;
-    background: #fff;
+    background: #111111;
 }
 header .logo h2, 
 header .logo p{
@@ -15,10 +15,13 @@ header .logo p{
     display: inline-block;
 }
 header .logo .bar{
-    color: black;
+    color: #ECCE8E;
 }
 header .logo .bar:hover{
     color: blanchedalmond;
+}
+header nav .menutxt{
+    color: black;
 }
 
 header .logo svg{
@@ -27,11 +30,11 @@ header .logo svg{
 }
 
 header .logo p{
-    color: #777777;
+    color: #F6E8CB;
 }
 
 header .logo .icono{
-    color: #bfbfbf;
+    color: #F0D8A8;
 }
 
 header .menu .c1{background: #FBDCB2;}
@@ -51,7 +54,7 @@ header .menu .c3:hover{background: #D5810B;}
 /* Galeria */
 .galeria{
     border-top: 5px solid #D5810B;
-    background: #FFF;
+    background:#111111;
 }
 .galeria .titulo{
     color: #D5810B;
@@ -68,6 +71,9 @@ header .menu .c3:hover{background: #D5810B;}
 }
 .galeria .grilla .contenedor-imagen:hover img{
     opacity: 0.3;
+}
+.modal-dialog{
+    max-width: 800px;
 }
 .acerca-de .foto img{
     width: 70%;
@@ -139,21 +145,46 @@ header .menu .c3:hover{background: #D5810B;}
 .redes-sociales .icono{
     width: 100px;
     height: 100px;
-    color: #fff;
+    color: #000;
     background: #cbcbcb;
     display: inline-block;
     margin: 0px 20px;
     text-decoration: none;
     border-radius:100px;
     transition: all .3s ease;
+    box-shadow: 0 5px 4px rgba(255,255,255,.5);
+}
+.redes-sociales .icono:hover{
+    transform: translate(0 , -10px);
+    color:#fff;
+}
+.redes-sociales .fb:hover{
+    background: #3b5998;
+}
+.redes-sociales .insta:hover{
+    background: #e4405f;
+}
+.redes-sociales .twitter:hover{
+    background: #1da1f2;
 }
 .redes-sociales .icono svg{
     width: 40px;
     height: 40px;
 }
-.redes-sociales .fb{background: #3b5998;}
-.redes-sociales .insta{background: #833ab4;}
-.redes-sociales .twitter{background: #1da1f2;}
+.redes-sociales .fb{background: wheat;}
+.redes-sociales .insta{background: wheat;}
+.redes-sociales .twitter{background: wheat;}
+
+/* Main Font colors */
+.container .adbanner .adtitle,
+.container .adbanner .adsubtitle{
+    color: wheat;
+}
+
+.container .bookatab .bookatabinfo{
+    border: 8px double wheat;
+    color: wheat;
+}
 
 @media screen and (max-width: 576px){
     .redes-sociales .icono{
