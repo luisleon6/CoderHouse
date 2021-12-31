@@ -19,3 +19,25 @@ $ftFb: #3b5998;
 $ftIg: #e4405f;
 $ftTw: #1da1f2;
 $mainFont: "Red Hat Display", sans-serif;
+
+// Color Palette
+$colors: (
+    "bgColor": $bgColor,
+    "menuColor": $menuColor,
+    "barColor": $barColor,
+    "pBarColor": $pBarColor,
+    "iBarColor": $iBarColor,
+    "menuPage1":$menuPage1,
+    "menuPage2": $menuPage2,
+    "menuPage3": $menuPage3
+);
+
+// Mixins
+@mixin text-area ($padding, $height, $min-height, $max-height, $border){
+    padding: $padding;
+    height: $height;
+    min-height: $min-height;
+    max-height: $max-height;
+    border: $border;
+}
+

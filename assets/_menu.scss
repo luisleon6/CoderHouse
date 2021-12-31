@@ -3,7 +3,7 @@
 
 .galeria {
   border-top: 5px solid $gallery;
-  background: $menuColor;
+  background: map-get($colors, $key:'menuColor' );
   .titulo {
     color: $gallery;
     font-family: $mainFont;

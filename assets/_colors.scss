@@ -1,0 +1,18 @@
+@each $key, $val in $colors{
+    .bg-#{$key}{
+        background-color: $val
+    }
+
+    //Aclarar
+    @for $i from 1 through 9{
+        .bg-#{$key}-light-#{$i}{
+            background-color: mix(white, $val, $i * 10);
+        }
+    }
+    //Oscurecer
+    @for $i from 1 through 9{
+        .bg-#{$key}-dark-#{$i}{
+            background-color: mix(black, $val, $i * 10);
+        }
+    }
+}

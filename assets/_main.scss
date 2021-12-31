@@ -2,7 +2,7 @@ header {
   .nav {
     min-height: 80px;
     overflow: hidden;
-    background: $menuColor;
+    background: map-get($colors, 'menuColor');
   }
   .logo {
     h2,
@@ -17,10 +17,10 @@ header {
       }
     }
     p {
-      color: $pBarColor;
+      color: map-get($colors, 'pBarColor')
     }
     .icono {
-      color: $iBarColor;
+      color: map-get($colors, 'iBarColor')
     }
     svg {
       width: 20px;
@@ -32,19 +32,19 @@ header {
   }
   .menu {
     .c1 {
-      background: $menuPage1;
+      background: map-get($colors, 'menuPage1');
       &:hover {
         background: $menuPage1H;
       }
     }
     .c2 {
-      background: $menuPage2;
+      background: map-get($colors, 'menuPage2');
       &:hover {
         background: $menuPage2H;
       }
     }
     .c3 {
-      background: $menuPage3;
+      background: map-get($colors, 'menuPage3');
       &:hover {
         background: $menuPage3H;
       }
