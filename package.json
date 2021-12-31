@@ -1,0 +1,28 @@
+{
+  "name": "bar75",
+  "version": "1.0.0",
+  "description": "bar 75 vallarta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sasscomp": "node-sass assets/styles.scss assets/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisleon6/CoderHouse.git"
+  },
+  "keywords": [
+    "front-end",
+    "scss"
+  ],
+  "author": "Farah Hadid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisleon6/CoderHouse/issues"
+  },
+  "homepage": "https://github.com/luisleon6/CoderHouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -2,245 +2,177 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
-  background: #07090f;
-}
+  background: #07090f; }
 
 header .nav {
   min-height: 80px;
   overflow: hidden;
-  background: #111111;
-}
+  background: #111111; }
 
-header .logo h2, header .logo p {
+header .logo h2,
+header .logo p {
   font-size: 16px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 header .logo .bar {
-  color: #ECCE8E;
-}
-
-header .logo .bar:hover {
-  color: blanchedalmond;
-}
+  color: #ECCE8E; }
+  header .logo .bar:hover {
+    color: blanchedalmond; }
 
 header .logo p {
-  color: #f6e8cb;
-}
+  color: #f6e8cb; }
 
 header .logo .icono {
-  color: #F0D8A8;
-}
+  color: #F0D8A8; }
 
 header .logo svg {
   width: 20px;
-  height: 20px;
-}
+  height: 20px; }
 
 header nav .menutxt {
-  color: black;
-}
+  color: black; }
 
 header .menu .c1 {
-  background: #FBDCB2;
-}
-
-header .menu .c1:hover {
-  background: #F5A83D;
-}
+  background: #FBDCB2; }
+  header .menu .c1:hover {
+    background: #F5A83D; }
 
 header .menu .c2 {
-  background: #F8CB8C;
-}
-
-header .menu .c2:hover {
-  background: #E98D0C;
-}
+  background: #F8CB8C; }
+  header .menu .c2:hover {
+    background: #E98D0C; }
 
 header .menu .c3 {
-  background: #F6B151;
-}
-
-header .menu .c3:hover {
-  background: #D5810B;
-}
+  background: #F6B151; }
+  header .menu .c3:hover {
+    background: #D5810B; }
 
 .slide .carousel-item img {
   height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
+  object-fit: cover;
+  object-position: center; }
 
-.container .adbanner .adtitle, .container .adbanner .adsubtitle {
-  color: wheat;
-}
+.container .adbanner .adtitle,
+.container .adbanner .adsubtitle {
+  color: wheat; }
 
 .container .bookatab .bookatabinfo {
   border: 8px double wheat;
-  color: wheat;
-}
+  color: wheat; }
 
-/* Galeria */
+/* Galeria*/
 .galeria {
   border-top: 5px solid #D5810B;
-  background: #111111;
-}
-
-.galeria .titulo {
-  color: #D5810B;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 400;
-}
-
-.galeria .grilla .contenedor-imagen {
-  max-height: 180px;
-  overflow: hidden;
-}
-
-.galeria .grilla .contenedor-imagen a {
-  background: #D5810B;
-  display: inline-block;
-}
-
-.galeria .grilla .contenedor-imagen:hover img {
-  opacity: 0.3;
-}
+  background: #111111; }
+  .galeria .titulo {
+    color: #D5810B;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400; }
+  .galeria .grilla .contenedor-imagen {
+    max-height: 180px;
+    overflow: hidden; }
+    .galeria .grilla .contenedor-imagen a {
+      background: #D5810B;
+      display: inline-block; }
+    .galeria .grilla .contenedor-imagen:hover img {
+      opacity: 0.3; }
 
 .modal-dialog {
-  max-width: 800px;
-}
+  max-width: 800px; }
 
 .acerca-de .foto img {
-  width: 70%;
-}
+  width: 70%; }
 
 .acerca-de .foto .nombre {
   color: #545454;
   font-weight: 100;
   font-size: 18px;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
 .acerca-de .info .resumen {
   letter-spacing: 1px;
-  color: #cbcbcb;
-}
+  color: #cbcbcb; }
 
 .acerca-de .info .footprint {
-  border: 16px double #edb91d;
-}
+  border: 16px double #edb91d; }
 
 .container .titulo-ad {
   color: #005385;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
-/* Contacto */
+/* Contacto*/
 .contactanos {
   border-top: 1px solid #cbcbcb;
-  border-bottom: 1px solid #cbcbcb;
-}
+  border-bottom: 1px solid #cbcbcb; }
+  .contactanos .titulo {
+    color: #ae6a09;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center; }
+  .contactanos .formulario input[type="text"], .contactanos .formulario input[type="email"] {
+    padding: 15px;
+    border: none;
+    font-family: "Red Hat Display", sans-serif; }
+  .contactanos .formulario textarea {
+    padding: 15px;
+    border: none;
+    font-family: "Red Hat Display", sans-serif;
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px; }
+  .contactanos .formulario .boton {
+    background: #D5810B;
+    border: none;
+    padding: 7px 30px;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    cursor: pointer;
+    width: auto;
+    border-radius: 3px; }
+    .contactanos .formulario .boton:hover {
+      background: #F6B151; }
 
-.contactanos .titulo {
-  color: #ae6a09;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.contactanos .formulario input[type="text"], .contactanos .formulario input[type="email"] {
-  padding: 15px;
-  border: none;
-  font-family: "Red Hat Display", sans-serif;
-}
-
-.contactanos .formulario textarea {
-  padding: 15px;
-  border: none;
-  font-family: "Red Hat Display", sans-serif;
-  height: 150px;
-  min-height: 150px;
-  max-height: 250px;
-}
-
-.contactanos .formulario .boton {
-  background: #D5810B;
-  border: none;
-  padding: 7px 30px;
-  color: white;
-  font-family: "Red Hat Display", sans-serif;
-  cursor: pointer;
-  width: auto;
-  border-radius: 3px;
-}
-
-.contactanos .formulario .boton:hover {
-  background: #F6B151;
-}
-
-/* Footer */
+/* Footer*/
 .redes-sociales {
   padding: 40px 0px;
-  margin-bottom: 40px;
-}
-
-.redes-sociales .icono {
-  width: 100px;
-  height: 100px;
-  color: #000;
-  background: #cbcbcb;
-  display: inline-block;
-  margin: 0px 20px;
-  text-decoration: none;
-  border-radius: 100px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-box-shadow: 0 5px 4px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 5px 4px rgba(255, 255, 255, 0.5);
-}
-
-.redes-sociales .icono:hover {
-  -webkit-transform: translate(0, -10px);
-          transform: translate(0, -10px);
-  color: #fff;
-}
-
-.redes-sociales .fb:hover {
-  background: #3b5998;
-}
-
-.redes-sociales .insta:hover {
-  background: #e4405f;
-}
-
-.redes-sociales .twitter:hover {
-  background: #1da1f2;
-}
-
-.redes-sociales .icono svg {
-  width: 40px;
-  height: 40px;
-}
-
-.redes-sociales .fb, .redes-sociales .insta, .redes-sociales .twitter {
-  background: wheat;
-}
+  margin-bottom: 40px; }
+  .redes-sociales .icono {
+    width: 100px;
+    height: 100px;
+    color: #000;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+    box-shadow: 0 5px 4px rgba(255, 255, 255, 0.5); }
+    .redes-sociales .icono:hover {
+      transform: translate(0, -10px);
+      color: #fff; }
+  .redes-sociales .fb:hover {
+    background: #3b5998; }
+  .redes-sociales .insta:hover {
+    background: #e4405f; }
+  .redes-sociales .twitter:hover {
+    background: #1da1f2; }
+  .redes-sociales .icono svg {
+    width: 40px;
+    height: 40px; }
+  .redes-sociales .fb,
+  .redes-sociales .insta,
+  .redes-sociales .twitter {
+    background: wheat; }
 
 @media screen and (max-width: 576px) {
   .redes-sociales .icono {
     width: 50px;
-    height: 50px;
-  }
+    height: 50px; }
   svg {
     width: 25px;
-    height: 25px;
-  }
-}
-/*# sourceMappingURL=styles.css.map */
+    height: 25px; } }
