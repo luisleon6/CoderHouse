@@ -1,0 +1,87 @@
+.bannermenu 
+	width: 100% 
+	height: 100vh 
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_noonmoon.jpeg) 
+	background-size: cover 
+	background-position: center 
+.bannermenu__navbar 
+	width: 85% 
+	margin: auto 
+	padding: 35px 0 
+	background: none 
+	display: flex 
+	align-items: center 
+	justify-content: space-between 
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+	margin-left: 35px 
+	padding: 0 
+	nav 
+		background: none 
+		ul#menuList 
+			background: none 
+		ul 
+			display: none 
+	ul 
+		li 
+			list-style: none 
+			background: none 
+			display: inline-block 
+			margin: 0 20px 
+			position: relative 
+			a 
+				background: none 
+				color: #F3E8CA 
+				text-transform: uppercase 
+				text-decoration: none 
+				&.page-active 
+					text-decoration: none 
+					color: #E5CD8B 
+					text-transform: uppercase 
+			&.page-active 
+				&::after 
+					content: '' 
+					height: 3px 
+					width: 0 
+					background: #E5CD8B 
+					position: absolute 
+					left: 0 
+					bottom: 0 
+					transition: 0.5s 
+			&::after 
+				content: '' 
+				height: 3px 
+				width: 0 
+				background: #F3E8CA 
+				position: absolute 
+				left: 0 
+				bottom: 0 
+				transition: 0.5s 
+				content: '' 
+				height: 3px 
+				width: 0 
+				background: #F3E8CA 
+				position: absolute 
+				left: 0 
+				bottom: 0 
+				transition: 0.5s 
+			&:hover 
+				&::after 
+					width: 100% 
+
+.bannermenu__navbar-logo 
+	width: 150px 
+	cursor: pointer 
+	background: none 
+	width: 50px 
+	cursor: pointer 
+    
+.bannerloc 
+	width: 100% 
+	height: 95vh 
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_peachy.jpeg) 
+	background-size: cover 
+	background-position: center 
+	background-image: none 
+	height: auto 

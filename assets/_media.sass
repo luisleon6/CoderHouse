@@ -1,0 +1,82 @@
+@keyframes animate 
+	from
+    opacity: 0 
+    transform: rotate(45deg) translate(-20px,-20px)
+    50%
+        opacity: 1 
+    to
+        opacity: 0 
+        transform: rotate(45deg) translate(20px,20px)
+
+@media (max-width: 720px)
+    .form
+        width: 100%
+        box-sizing: border-box
+        margin: 0
+        padding: 0
+
+    .menu
+        font-size: 12px
+
+    .banner__logo
+        display: none
+
+    .banner__logo--res
+        display: block
+        width: 50px
+        cursor: pointer
+
+    .bannerloc
+        background-image: none
+        height: auto
+
+    .bannermenu__navbar-logo
+        width: 50px
+        cursor: pointer
+
+    .menu-icon
+        display: block
+        cursor: pointer
+        background: #fff
+
+    .bannermenu__navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 35px
+        padding: 0
+        nav ul
+            display: none
+
+    .navbar
+        display: flex
+        justify-content: space-around
+
+    nav .menu_list
+        width: 100%
+        position: absolute
+        top: 75px
+        right: 0
+        z-index: 2
+    li
+      display: block
+      margin-top: 10px
+      margin-bottom: 10px
+      a
+        color: #fff
+
+    .footer
+        display: none
+
+    .vertical
+        grid-row: span 1
+
+    .horizontal
+        grid-column: span 1
+
+    .amplio
+        grid-row: span 1
+        grid-column: span 1
+
+    .locationbox__img
+        display: none

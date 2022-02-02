@@ -7,15 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4691b0d2de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/styles.css">
-    <title>Nuestra Historia</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Bar 75 | Nuestra Historia</title>
+    <meta name="description" content="Bar 75 es una idea fresca y unica que ofrece una experiencia sin igual para pasar un tiempo con la mejor compañia">
 </head>
 <body>
 
     <!--Este header va a contener nuestro menu horizontal con el logo en el mismo-->
     <header class="bannerloc">
         <div class="bannermenu__navbar">
-            <img class="bannermenu__navbar-logo" src="../img/bar-75_logo.png" alt="Logo">
+            <img class="bannermenu__navbar-logo" src="../img/chainlogo.svg" alt="Logo">
             <nav>
                 <ul id="menuList">
                     <li><a href="../index.html">Bienvenido</a></li>
@@ -25,20 +28,25 @@
                     <li><a href="./reservaciones.html">Reservaciones</a></li>
                 </ul>
             </nav>
-            <img src="../img/menu_icon.png" alt="" class="menu-icon" onclick="togglemenu()">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
         </div>
     </header>
     <section class="ourstory">
-        <h2>Nuestra Historia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quisquam hic modi neque consectetur et iusto magni, error, laborum nobis alias ratione voluptas facere inventore voluptate cupiditate, qui amet accusamus!
-        Nesciunt quis atque quas error illum aliquam quo cumque totam dignissimos, corporis quasi iure earum praesentium et sit dicta eum nam similique ullam itaque ducimus? Iure architecto voluptatum nemo ducimus?
-        Libero adipisci dignissimos incidunt quisquam veritatis ipsa eaque cupiditate sequi quasi repellendus, velit ut iste neque. Nostrum hic quos explicabo maiores corporis odio debitis? Accusamus fugiat nostrum tenetur vitae blanditiis.</p>
+        <h1>Nuestra Historia</h1>
+        <p>Bar 75, es una empresa que surgió del amor y que gracias a este, hoy sigue cautivando con su magia.
+            Fresas con chocolate y rosas ¿quien lo iba a pensar? Una fusión que se gestó en la mente de Laura, y que gracias al trabajo en equipo se transformó en un detalle que desborda elegancia.            
+            Una mezcla de ideas sin fin y un mar de sueños por cumplir, empezaron a darle forma a un proyecto que pronto enamoraría a Vallarta, y que en manos de estos dos soñadores sin remedio, cambiaría la vida de muchas personas.</p>
     </section>
     <section>
         <div class="locationbox">
             <div class="locationbox__text locationbox__text-border">
                 <h2>Inicios</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut. Perferendis dolores, dolorum excepturi fuga sed necessitatibus deserunt. Possimus ipsam veritatis quia hic in, harum nobis fugit beatae qui quo.</p>
+                <p>Bar 75, más que una empresa, es una gran familia, que cada día crece junto con sus mujeres y madres cabeza de hogar, con el firme objetivo de llevar sonrisas de amor a cada rincón del país.
+                    Hoy continuamos nuestra labor con firmeza , porque si algo entendimos, es que cuando pones tu corazón como base, tus cimientos siempre serán sólidos; por ello, caminamos convencidos que cuando el amor te transforma, este nunca deja de ser.</p>
             </div>
             <div class="locationbox__img">
                 <img src="../img/Mixology_blackLabel.jpeg" alt="Bar_75 imageholder">
@@ -112,9 +120,32 @@
     </div>
     <!--footer generico, se trabajara mas adelante en el para estilarlo conforme a lo que se estipula en el wireframe-->
     <footer class="footer">
-        <a href="/">Terminos de uso</a>
-        <a href="/">Declaracion de privacidad</a>
-        <a href="/">Centro de ayuda</a>
+        <div class="footer__social">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/Bar-75-110325108154700" target="_blank">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="icon twitter">
+                <a href="https://twitter.com/LosImposiblesFC" target="_blank">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+            </div>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/bar75_mx/" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer__pages">
+            <p class="footer__pages--loc">Calle Morelos #799-A, Pto. Vallarta</p>
+            <p class="footer__pages--cell">(331) 280-8485</p>
+        </div>
+
     </footer>
 </body>
 </html>

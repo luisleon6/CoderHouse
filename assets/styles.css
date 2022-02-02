@@ -6,7 +6,7 @@
 }
 .banner{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_index_bg.jpeg);
     background-size: cover;
     background-position: center; 
@@ -26,13 +26,120 @@
     transition: 0.6s;
 }
 .banner__logo{
-    width: 18% ;
+    width: 30% ;
     cursor: pointer;
     margin: auto;
     display: block;
+    background: none;
 }
-.banner__logo--res{
-    display: none;
+.box{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box span{
+    display: block;
+    background: none;
+    width: 20px; 
+    height: 20px;
+    margin: -10px;
+    border-bottom: 1px solid #fff; 
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+.box span:nth-child(2){
+    animation-delay: -0.2s; 
+}
+.box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+article .reservas__contenedor{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+article .reservas__contenedor .reservas__contenedor--mesa{
+    display: block;
+    color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    border: 4px double blanchedalmond;
+    padding: 117px 60px;
+    box-sizing: border-box;
+    height: 350px;
+
+}
+article .reservas__contenedor .reservas__contenedor--mesa a{
+    text-decoration: none;
+    border: 2px solid blanchedalmond;
+    padding: 15px;
+}
+article .reservas__contenedor .reservas__contenedor--mesa a:hover{
+    background:#E5CD8B;
+    color: #111;
+    transition: 0.6s;
+}
+article .reservas__contenedor .reservas__contenedor--mesa .mesa__org{
+    margin-bottom: 80px;
+}
+article .reservas__contenedor .reservas__contenedor--mesa a:visited{
+    color: blanchedalmond;
+}
+article .reservas__contenedor .reservas__contenedor--img{
+    width: 30%;
+    margin: auto;
+}
+article .reservas__contenedor .reservas__contenedor--img img{
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+}
+article .evt__container{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+article .evt__container .evt__container--schedule{
+    display: block;
+    color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    border: 4px double blanchedalmond;
+    padding: 117px 60px;
+    box-sizing: border-box;
+    height: 350px;
+
+}
+article .evt__container .evt__container--schedule a{
+    text-decoration: none;
+    border: 2px solid blanchedalmond;
+    padding: 15px;
+}
+article .evt__container .evt__container--schedule a:hover{
+    background:#E5CD8B;
+    color: #000;
+    transition: 0.6s;
+}
+article .evt__container .evt__container--schedule .schedule__org{
+    margin-bottom: 80px;
+}
+article .evt__container .evt__container--schedule a:visited{
+    color: blanchedalmond;
+}
+article .evt__container .evt__container--img{
+    width: 30%;
+    margin: auto;
+}
+article .evt__container .evt__container--img img{
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
 }
 .menu ul{
     position: relative;
@@ -63,6 +170,71 @@
 .menu ul li a:hover{
     color:brown ;
 }
+.undercover__facts{
+    margin-top: 2%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    color: blanchedalmond;
+    justify-content: space-around;
+}
+.undercover__facts .undercover__facts--best .adsubtitle{
+    display: flex;
+    justify-content: center;
+}
+.undercover__facts .undercover__facts--mex .adsubtitle{
+    display: flex;
+    justify-content: center;
+}
+.menupg__container{
+    position: relative;
+    width: 90%;
+    margin: 95px auto;
+}
+.menupg__container img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.menupg__container .heading{
+    color: blanchedalmond;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    background:none;
+}
+.menupg__container .subheader{
+    color: blanchedalmond;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5rem;
+    background:rgba(0,0,0,0.4);
+    padding: 15px;
+}
+section .menupg__container a{
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid blanchedalmond;
+    padding: 15px;
+    top: 46%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+}
+section .menupg__container a:visited{
+    color: #000;
+}
+section .menupg__container a:hover{
+    background: #E5CD8B;
+    transition: 0.6s;
+}
+
 
 .footer{
     width: 100%;
@@ -72,13 +244,16 @@
     justify-content: space-between;
     align-items: center;
 }
-.footer a{
+.footer p{
     color: #F3E8CA;
+    display: inline-block; 
+    letter-spacing: 2px; 
 }
 .footer__social{
     display: inline-flex;
+    margin-left: 45px;
 }
-.footer__social .icon{
+.footer__social .icon a{
     margin: 0 20px;
     display: flex;
     justify-content: center;
@@ -88,7 +263,7 @@
     z-index: 2;
     cursor: pointer;
 }
-.footer__social .icon span{
+.footer__social .icon a span{
     position: relative;
     height: 45px;
     width: 45px;
@@ -97,18 +272,20 @@
     background: #F3E8CA;
     border-radius:50%;
     box-shadow: 0 10px 10px rgba(0,0,0,0.25);
-    text-align: center;
+    text-align: center; 
 }
-.footer__social .icon span i{
+.footer__social .icon a span i{
     font-size: 25px;
     line-height: 45px;
     background: none;
 }
-.footer__social .icon .tooltip{
+.footer__social .icon a:visited span i{
+    color: #000;
+}
+.footer__social .icon a .tooltip{
     position: absolute;
     top: 0;
     box-shadow: 0 10px 10px rgba(0,0,0,0.25);
-    background: #F3E8CA;
     font-size: 20px;
     padding: 10px 18px;
     border-radius: 25px;
@@ -116,17 +293,65 @@
     pointer-events: none;
     transition: all 0.4s cubic-bezier(0.68,-0.55, 0.265,1.55);
 }
-.footer__social .icon:hover .tooltip{
+.footer__social .icon a:visited .tooltip{
+    color: #000;
+}
+.footer__social .facebook:hover a span{
+    background: #3b5999; 
+    transition: 0.5s;
+}
+.footer__social .facebook:hover a .tooltip{
     opacity: 1;
     pointer-events: auto;
     top: -70px;
+    background: #3b5999;
 }
-.footer__social .icon .tooltip::before{
+.footer__social .twitter:hover a span{
+    background: #55acee; 
+    transition: 0.5s;
+}
+.footer__social .twitter:hover a .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+    background: #55acee;
+}
+.footer__social .instagram:hover a span{
+    background: #e4405f; 
+    transition: 0.5s;
+}
+.footer__social .instagram:hover a .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+    background: #e4405f;
+}
+.footer__social .facebook a .tooltip::before{
     position: absolute;
     content: "";
     height: 10px;
     width: 10px;
-    background: #F3E8CA;
+    background: #3b5999;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.footer__social .twitter a .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #55acee;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.footer__social .instagram a .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #e4405f;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
@@ -135,7 +360,7 @@
     font-size: 16px;
     margin: 15px;
 }
-.footer__pages a{
+.footer__pages p{
     margin: 15px;
     padding:15px;
     text-decoration: none;
@@ -143,9 +368,9 @@
     color: #F3E8CA;
     cursor: pointer;
 }
-.footer__pages a:hover{
-    color: brown
-
+.footer__pages p:hover{
+    color: brown;
+    cursor: none;
 }
 .bannermenu{
     width: 100%;
@@ -170,14 +395,9 @@
     background: none;
 }
 .bannermenu__navbar-logo{
-    width: 75px;
+    width: 150px;
     cursor: pointer;
-}
-.menu-icon{
-    display: none;
-    width: 50px;
-    cursor: pointer;
-    margin: 30px 0;
+    background: none;
 }
 .bannermenu__navbar ul li{
     list-style: none;
@@ -233,18 +453,41 @@
 .drinkmen{
     background: #000;
     color:#F3E8CA;
+    margin-top: 90px;
+}
+.drinkmen__container{
+    position: relative;
+    width: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px double blanchedalmond;
+    
 }
 .drinkmen__header{
     font-size: 32px;
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .drinkmen__categories h2{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    color:brown
+}
+.drinkmen__categories h5{
+    display: flex;
+    justify-content: start;
+    font-size: 18px;
+    margin-bottom: 4px; 
+    width: 60%;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: salmon;
 }
 .drinkmen__categories p{
     width: 60%;
@@ -274,20 +517,37 @@ section .locationbox .locationbox__text{
     padding: 50px 75px;
 }
 section .locationbox .locationbox__text h2{
+    text-align: center;
     margin-bottom: 25px;
+}
+section .locationbox .locationbox__text .ptxt{
+    text-align: center;
+    border: 3px double blanchedalmond;
+    padding: 25px;
+}
+section .locationbox .locationbox__text .ptxt p{
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 
 section .locationbox .locationbox__img img{
-    width: 250px;
+    position: relative;
+    top:25px;
+    width: 450px;
 }
 .locationbox__text-border{
     margin: 25px;
     border: 5px double #F3E8CA;
 }
 .ourstory{
-    margin: 60px;
+    position: relative;
+    margin-top: 60px;
     color:#F3E8CA;
+    text-align: center;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 .ourstory h2{
@@ -362,6 +622,19 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 @media (max-width:720px){
     .form{
         width:100%;
@@ -402,6 +675,7 @@ textarea{
         align-items: center;
         margin-left: 35px;
         padding: 0;
+        z-index: 3;
     }
     .navbar{
         display: flex;
@@ -438,4 +712,114 @@ textarea{
    .locationbox__img{
        display: none;
    }
+   section .locationbox .locationbox__text h1{
+       text-align: center;
+   }
+   section .locationbox .locationbox__text .ptxt{
+       width: 450px;
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+       margin-top: 25px;
+   }
+   .drinkmen__container{
+       width: 480px;
+   }
+   .ourstory{
+       width: 480px;
+   }
+   .ourstory p {
+       margin-top: 25px;
+   }
+    article .evt__container .evt__container--img img {
+        display: none;
+    }
+    article .reservas__contenedor .reservas__contenedor--img img{
+        display: none;
+    }
+    article .reservas__contenedor .reservas__contenedor--mesa{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+    article .evt__container .evt__container--schedule{
+        display: none;
+    }
+    
+}
+@media (max-width:1200px){
+    .bannermenu__navbar{
+        position: relative;
+        display: block;
+        padding: 0;
+        font-size: 15px;
+    }
+    .bannermenu__navbar nav{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bannermenu__navbar nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .bannermenu__navbar nav ul li{
+        margin-top: 25px;
+    }
+    .bannermenu__navbar-logo{
+        display:none;
+    }
+    .box span{
+        display: none;
+    }
+    section .menupg__container a{
+        margin-top: 45px;
+    }
+}
+@media (max-width:580px){
+    .navbar{
+        width:400px;
+        position: relative;
+        display: block;
+        padding: 0;
+        font-size: 10px;
+    }
+    .navbar nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bannermenu__navbar{
+        position: relative;
+        display: block;
+        padding: 0;
+        font-size: 15px;
+    }
+    .bannermenu__navbar nav{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bannermenu__navbar nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .bannermenu__navbar nav ul li{
+        margin-top: 25px;
+    }
+    .bannermenu__navbar-logo{
+        display:none;
+    }
+    section .menupg__container a{
+        margin-top: 65px;
+    }
+    body > section.undercover > div > div.undercover__facts--best{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    body > section.undercover > div > div.undercover__facts--mex{
+        display: none;
+    }
 }

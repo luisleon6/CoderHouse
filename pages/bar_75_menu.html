@@ -7,15 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4691b0d2de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/styles.css">
-    <title>Document</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Bar 75 | Menu</title>
+    <meta name="description" content="Contamos con una amplia variedad de Licores, los mejores mezcales y mixologia 100% mexicana para su deleite">
 </head>
 <body>
 
     <!--Este header va a contener nuestro menu horizontal con el logo en el mismo-->
     <header class="bannermenu">
         <div class="bannermenu__navbar">
-            <img class="bannermenu__navbar-logo" src="../img/bar-75_logo.png" alt="Logo">
+            <img class="bannermenu__navbar-logo" src="../img/chainlogo.svg" alt="Logo">
             <nav>
                 <ul id="menuList">
                     <li><a href="../index.html">Bienvenido</a></li>
@@ -25,37 +28,92 @@
                     <li><a href="./reservaciones.html">Reservaciones</a></li>
                 </ul>
             </nav>
-            <img src="../img/menu_icon.png" alt="" class="menu-icon" onclick="togglemenu()">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <!--Pagina 1 de menu, se planea movernos sobre el mismo menu una vez tengamos 
         la informacion completa (por parte del cliente[le estoy haciendo el sitio a un amigo jeje])-->
     <section class="drinkmen">
-        <div>
-            <h2 class="drinkmen__header">Bar 75 Menu</h2>
+        <div class="drinkmen__container">
+            <h1 class="drinkmen__header">Bar 75 Menu</h1>
             <div class="drinkmen__categories"> 
-                <h2>Espumosos</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati vero voluptas libero eius earum debitis impedit voluptatum. Illo voluptas eveniet libero quas repudiandae rerum quisquam esse at id. Quidem.</p>
+                <h2>Clasicos</h2>
+                <h5>Negroni</h5>
+                <p>Ginebra/Campari/Vermout Rosso</p>
+                <h5>Old Fashion</h5>
+                <p>Whiskey/Biters/Azucar/Tash de Agua Mineral</p>
+                <h5>Martini</h5>
+                <p>Ginebra/Vermout Rosso</p>
+                <h5>Long Island</h5>
+                <p>Vodka/Ginebra/Ron/Tequila/Triple Sec/Jugo de Limon/Coca</p>
+                <h5>Aviation</h5>
+                <p>Ginebra/Licor de Marasquino/ Crema de Violeta/Limon</p>
             </div>
             <div class="drinkmen__categories">
-                <h2>Blancos</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati vero voluptas libero eius earum debitis impedit voluptatum. Illo voluptas eveniet libero quas repudiandae rerum quisquam esse at id. Quidem.</p>
+                <h2>Ginebras</h2>
+                <h5>Frutos Rojos</h5>
+                <p>Martajado de frutos rojos/Ginebra/Agua Tónica</p>
+                <h5>Lima</h5>
+                <p>Ginebra/Twist de Lima/Espejeado de pepino/Agua Tónica</p>
+                <h5>Toronja</h5>
+                <p>Ginebra/Splash de jugo de Toronja/Agua Tónica/Luna de Toronja</p>
             </div>
             <div class="drinkmen__categories">
-                <h2>Rosados</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati vero voluptas libero eius earum debitis impedit voluptatum. Illo voluptas eveniet libero quas repudiandae rerum quisquam esse at id. Quidem.</p>
+                <h2>Carajillos</h2>
+                <h5>Clásico</h5>
+                <p>Licor 43/Shot Expreso</p>
+                <h5>Ferrero</h5>
+                <p>Licor 43/Shot Expresso/Biters Chocolate/Ferrero</p>
+                <h5>Hasselnut</h5>
+                <p>Licor 43/Shot Expreso/Frangelicco/Canela Vietnamita</p>
             </div>
             <div class="drinkmen__categories">
-                <h2>Tintos</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati vero voluptas libero eius earum debitis impedit voluptatum. Illo voluptas eveniet libero quas repudiandae rerum quisquam esse at id. Quidem.</p>
+                <h2>Especiales</h2>
+                <h5>Red Velvet</h5>
+                <p>Mezcal/Triple Sec/Jarabe de Jamaica Especiado/Jugo de Limon</p>
+                <h5>Black Magic</h5>
+                <p>Frangelicco/Baileys/Licor 43/Amaretto/Mazapan/Carbon Activado</p>
+                <h5>Suspiros</h5>
+                <p>Tequila/Vodka/Jugo de Naranja Natural/Apperol/Prosseco/Miel de Agave</p>
+                <h5>Nacho Cortes</h5>
+                <p>Jugo de Naranja/Jugo de Toronja/Piña Martajada/Chile Serrano/Tequila Añejo/ Licor de Chile Ancho</p>
+                <h5>Sunset</h5>
+                <p>Jugo de Naranja/Jugo de Granada/Whiskey/Passionfruit</p>
             </div>
         </div>
     </section>
     <!--footer generico, se trabajara mas adelante en el para estilarlo conforme a lo que se estipula en el wireframe-->
     <footer class="footer">
-        <a href="/">Terminos de uso</a>
-        <a href="/">Declaracion de privacidad</a>
-        <a href="/">Centro de ayuda</a>
+        <div class="footer__social">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/Bar-75-110325108154700" target="_blank">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="icon twitter">
+                <a href="https://twitter.com/LosImposiblesFC" target="_blank">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+            </div>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/bar75_mx/" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer__pages">
+            <p class="footer__pages--loc">Calle Morelos #799-A, Pto. Vallarta</p>
+            <p class="footer__pages--cell">(331) 280-8485</p>
+        </div>
+
     </footer>
 </body>
 </html>

@@ -7,14 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4691b0d2de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/styles.css">
-    <title>Contacto</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Bar 75 | Reservaciones</title>
+    <meta name="description" content="Bar 75 posee el mejor ambiente en Vallarta, los mejores cocteles y eventos disponibles en la ciudad">
 </head>
 <body>
     <!-- Barra de navegacion distinta al index, se incluye logo en la barra misma-->
     <header class="bannerloc">
         <div class="bannermenu__navbar">
-            <img class="bannermenu__navbar-logo" src="../img/bar-75_logo.png" alt="Logo">
+            <img class="bannermenu__navbar-logo" src="../img/chainlogo.svg" alt="Logo">
             <nav>
                 <ul id="menuList">
                     <li><a href="../index.html">Bienvenido</a></li>
@@ -24,13 +27,17 @@
                     <li class="page-active"><a class="page-active" href="./reservaciones.html">Reservaciones</a></li>
                 </ul>
             </nav>
-            <img src="../img/menu_icon.png" alt="" class="menu-icon" onclick="togglemenu()">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <!-- Formulario encapsulado en div para uso posterios dentro de el se adjuntan todos los elementos vistos en el wireframe-->
     <div>
         <form class="form" action="">
-            <h2 class="form__header">Contactanos</h2>
+            <h1 class="form__header">Contactanos</h1>
             <p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex quia quod</p>
                 <input type="text" name="nombres" placeholder="Nombre">
                 <input type="text" name="correo" placeholder="Correo">
@@ -40,24 +47,34 @@
                 <input id="formulario_enviar" type="submit" value="Enviar">
         </form>
     </div>
-    <!--footer generico, se trabajara mas adelante en el para estilarlo conforme a lo que se estipula en el wireframe-->
     <footer class="footer">
-        <a href="/">Terminos de uso</a>
-        <a href="/">Declaracion de privacidad</a>
-        <a href="/">Centro de ayuda</a>
+        <div class="footer__social">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/Bar-75-110325108154700" target="_blank">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="icon twitter">
+                <a href="https://twitter.com/LosImposiblesFC" target="_blank">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+            </div>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/bar75_mx/" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer__pages">
+            <p class="footer__pages--loc">Calle Morelos #799-A, Pto. Vallarta</p>
+            <p class="footer__pages--cell">(331) 280-8485</p>
+        </div>
+
     </footer>
 
-    <script>
-        var menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-        function togglemenu(){
-            if(menuList.style.maxHeight=="0px"){
-                menuList.style.maxHeight= "130px"
-            }
-            else{
-                menuList.style.maxHeight = "0px"
-            }
-        }
-    </script>
 </body>
 </html>

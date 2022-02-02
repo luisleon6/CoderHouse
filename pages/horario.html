@@ -7,35 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4691b0d2de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/styles.css">
-    <title>Bar 75</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <title>Bar 75 | Horario</title>
+    <meta name="description" content="Bar 75 es la mejor experiencia en cocteleria, visitanos cualquier dia a partir de las 21:00">
+    
 </head>
 <body>
     <!--Este header va a contener nuestro menu horizontal con el logo en el mismo-->
     <header class="bannerloc">
         <div class="bannermenu__navbar">
-            <img class="bannermenu__navbar-logo" src="../img/bar-75_logo.png" alt="Logo">
+            <img class="bannermenu__navbar-logo" src="../img/chainlogo.svg" alt="Logo">
             <nav>
                 <ul id="menuList">
                     <li><a href="../index.html">Bienvenido</a></li>
                     <li><a href="./nuestra_historia.html">Nuestra Historia</a></li>
                     <li><a href="./bar_75_menu.html">Bar 75 Menu</a></li>
-                    <li class="page-active"><a class="page-active" href="./horario.html">Horario</a></li>
+                    <li class="page-active"><a class="page-active" href="./horario.html">Horario & Ubicacion</a></li>
                     <li><a href="./reservaciones.html">Reservaciones</a></li>
                 </ul>
             </nav>
-            <img src="../img/menu_icon.png" alt="" class="menu-icon" onclick="togglemenu()">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <!--Debajo de la imagen en un futuro lo agregaremos una api de google maps-->
     <section>
         <div class="locationbox">
             <div class="locationbox__text">
-                <h2>Horarios y Ubicacion</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut. Perferendis dolores, dolorum excepturi fuga sed necessitatibus deserunt. Possimus ipsam veritatis quia hic in, harum nobis fugit beatae qui quo.</p>
+                <h1>Horarios y Ubicacion</h1>
+                <div class="ptxt">
+                    <p>Te esperamos en Bar 75 en Calle Morelos #799-A para una bienvenida calida todos los dias
+                        a partir de las 9:00 p.m. CST. Las reservaciones son ampliamente sugeridas para garantizar 
+                        la mejor experiencia, sin embargo nos complacera atenderte hasta en la visita mas inesperada.
+                    </p>
+                    <p>Bar 75 ofrece el mejor servicio y experiencia que puedes obtener en Puerto Vallarta
+                        Atrevete a conocer un nuevo concepto que envolvera todos tus sentidos una bebida a la vez. Te invitamos
+                        a compartir los mejores momentos al lado de Bar 75.
+                    </p>
+                </div>
             </div>
             <div class="locationbox__img">
-                <img src="../img/Mixology_blackLabel.jpeg" alt="Bar_75 imageholder">
+                <img src="../img/mapbar75.png" alt="Bar_75 imageholder">
             </div>
         </div>
     </section>
@@ -43,9 +60,32 @@
     <!--No olvides actualizar tu footer por el entregable final, este footer es para fines practicos unicamente-->
     <!--footer generico, se trabajara mas adelante en el para estilarlo conforme a lo que se estipula en el wireframe-->
     <footer class="footer">
-        <a href="/">Terminos de uso</a>
-        <a href="/">Declaracion de privacidad</a>
-        <a href="/">Centro de ayuda</a>
+        <div class="footer__social">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/Bar-75-110325108154700" target="_blank">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="icon twitter">
+                <a href="https://twitter.com/LosImposiblesFC" target="_blank">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+            </div>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/bar75_mx/" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer__pages">
+            <p class="footer__pages--loc">Calle Morelos #799-A, Pto. Vallarta</p>
+            <p class="footer__pages--cell">(331) 280-8485</p>
+        </div>
+
     </footer>
 </body>
 </html>

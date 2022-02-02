@@ -11,7 +11,9 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/4691b0d2de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="icon" href="./img/favicon.ico">
     <title>Bar 75</title>
+    <meta name="description" content="El mejor Bar en Vallarta con Mixologia 100% Mexicana, excelente ambiente para todos y el el mejor licor en el sitio">
 </head>
 
 <body>
@@ -19,7 +21,6 @@
     la barra de navegacion en index es distinta a las demas paginas ya que el logo se encuentra en el centro de la pagina-->
     <header class="menu">
         <div class="navbar">
-            <img class="banner__logo--res" src="./img/bar-75_logo.png" alt="Bar75 Logo">
             <nav>
                 <!--Estoy tratando de meter el menu a un burger menu pero no comprendo el JS aun
                 Dejare los links visibles por el momento pero la idea es esconderlos y abrirlos con el menu en la derecha -->
@@ -31,17 +32,21 @@
                     <li><a href="./pages/reservaciones.html">Reservaciones</a></li>
                 </ul>
             </nav>
-            <img src="../img/menu_icon.png" alt="" class="menu-icon">
         </div>
     </header>
     <!--banner para adjuntar una imagen de background y sobre ella posicionar al centro nuestro logo-->
     <section class="banner">
-        <img class="banner__logo" src="./img/bar-75_logo.png" alt="Bar75 Logo">
+        <img class="banner__logo" src="./img/chainlogo.svg" alt="Bar75 Logo">
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
     <section class="undercover">
         <div class="undercover__facts">
             <div class="undercover__facts--best">
-                <h2 class="adtitle">No. 1, Mejor Bar en Vallarta 2022</h2>
+                <h1 class="adtitle">No. 1, Mejor Bar en Vallarta 2022</h1>
                 <h3 class="adsubtitle">Experiencia Unica</h3>
             </div>
             <div class="undercover__facts--mex">
@@ -53,38 +58,66 @@
     <article class="reservas">
         <div class="reservas__contenedor">
             <div class="reservas__contenedor--mesa">
-                <h2>Reserva una mesa</h2>
-                <p> Bienvenido a Bar 75. Esperamos atenderte pronto</p>
+                <div class="mesa__org">
+                    <h2>Reserva una mesa</h2>
+                    <p> Bienvenido a Bar 75. Esperamos</p>
+                    <p>atenderte pronto!!!</p>
+                </div>
                 <a href="./pages/reservaciones.html">Reservaciones</a>
             </div>
             <div class="reservas__contenedor--img">
                 <img src="./img/Mixology_Drydrink.jpeg" alt="">
             </div>
-
         </div>
     </article>
-    <article class="merch">
-
+    <article class="evt">
+        <div class="evt__container">
+            <div class="evt__container--img">
+                <img src="./img/Mixology_milky.jpeg" alt=""> 
+            </div>
+            <div class="evt__container--schedule">
+                <div class="schedule__org">
+                    <h2>Horarios & Eventos</h2>
+                    <p>Enterate de nuestros eventos,</p>
+                    <p>horarios y ubicaciones</p>
+                </div>
+                <a href="./pages/horario.html">Ver Horarios</a>
+            </div>
+        </div>
     </article>
+    <section class="menupg">
+        <div class="menupg__container">
+            <img src="./img/Mixology_maracuya.jpeg" alt="">
+            <h2 class="heading">Bebidas</h2>
+            <p class="subheader">Haz click debajo para ver nuestra Mixologia</p>
+            <a href="./pages/bar_75_menu.html">Ver Menu</a>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer__social">
             <div class="icon facebook">
-                <div class="tooltip">Facebook</div>
-                <span><i class="fab fa-facebook-f"></i></span>
+                <a href="https://www.facebook.com/Bar-75-110325108154700" target="_blank">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
             </div>
             <div class="icon twitter">
-                <div class="tooltip">Twitter</div>
-                <span><i class="fab fa-twitter"></i></span>
+                <a href="https://twitter.com/LosImposiblesFC" target="_blank">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
             </div>
-            <div class="icon facebook">
-                <div class="tooltip">Instagram</div>
-                <span><i class="fab fa-instagram"></i></span>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/bar75_mx/" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
             </div>
 
         </div>
         <div class="footer__pages">
-            <a href="/">Eventos</a>
-            <a href="/">Contacto</a>
+            <p class="footer__pages--loc">Calle Morelos #799-A, Pto. Vallarta</p>
+            <p class="footer__pages--cell">(331) 280-8485</p>
         </div>
 
     </footer>

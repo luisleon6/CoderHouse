@@ -1,0 +1,206 @@
+* 
+	margin: 0 
+	padding: 0 
+	font-family: Red Hat Display, sans-serif 
+	background: #000 
+.banner 
+	width: 100% 
+	height: 90vh 
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Mixology_index_bg.jpeg) 
+	background-size: cover 
+	background-position: center 
+	display: flex 
+	justify-content: center 
+
+.banner__logo 
+	cursor: pointer 
+	margin: auto 
+	display: block 
+	background: none 
+	width: 30% 
+.box 
+	position: absolute 
+	top: 82% 
+	left: 50% 
+	transform: translate(-50%,-50%) 
+	span 
+		display: block 
+		background: none 
+		width: 20px 
+		height: 20px 
+		margin: -10px 
+		border-bottom: 1px solid #fff 
+		border-right: 1px solid #fff 
+		transform: rotate(45deg) 
+		animation: animate 2s infinite 
+		&:nth-child(2) 
+			animation-delay: -0.2s 
+		&:nth-child(3) 
+			animation-delay: -0.4s 
+
+.menu 
+	width: 100% 
+	top: 0 
+	margin: 0 
+	padding: 35px 0 
+	position: fixed 
+	display: flex 
+	align-items: center 
+	justify-content: space-around 
+	background-color: black 
+	transition: 0.6s 
+	font-size: 12px 
+	ul 
+		position: relative 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		li 
+			list-style: none 
+			position: relative 
+			display: inline-block 
+			margin: 0 20px 
+			a 
+				position: relative 
+				margin: 0 15px 
+				text-decoration: none 
+				text-transform: uppercase 
+				color: #F3E8CA 
+				letter-spacing: 2px 
+				transition: 0.6s 
+				&.page-active 
+					color: #E5CD8B 
+					text-decoration: none 
+					text-transform: uppercase 
+				&:hover 
+					color: brown 
+
+article 
+	.reservas__contenedor 
+		margin-top: 85px 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		.reservas__contenedor--mesa 
+			display: block 
+			color: blanchedalmond 
+			text-align: center 
+			text-transform: uppercase 
+			margin: auto 
+			border: 4px double blanchedalmond 
+			padding: 117px 60px 
+			box-sizing: border-box 
+			height: 350px 
+			a 
+				text-decoration: none 
+				border: 2px solid blanchedalmond 
+				padding: 15px 
+				&:hover 
+					background: #E5CD8B 
+					color: #111 
+					transition: 0.6s 
+				&:visited 
+					color: blanchedalmond 
+			.mesa__org 
+				margin-bottom: 80px 
+		.reservas__contenedor--img 
+			width: 30% 
+			margin: auto 
+			img 
+				width: 100% 
+				height: 350px 
+				object-fit: cover 
+	.evt__container 
+		margin-top: 85px 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		.evt__container--schedule 
+			display: block 
+			color: blanchedalmond 
+			text-align: center 
+			text-transform: uppercase 
+			margin: auto 
+			border: 4px double blanchedalmond 
+			padding: 117px 60px 
+			box-sizing: border-box 
+			height: 350px 
+			a 
+				text-decoration: none 
+				border: 2px solid blanchedalmond 
+				padding: 15px 
+				&:hover 
+					background: #E5CD8B 
+					color: #000 
+					transition: 0.6s 
+				&:visited 
+					color: blanchedalmond 
+			.schedule__org 
+				margin-bottom: 80px 
+		.evt__container--img 
+			width: 30% 
+			margin: auto 
+			img 
+				width: 100% 
+				height: 350px 
+				object-fit: cover 
+.undercover__facts 
+	margin-top: 2% 
+	letter-spacing: 2px 
+	text-transform: uppercase 
+	display: flex 
+	color: blanchedalmond 
+	justify-content: space-around 
+	.undercover__facts--best 
+		.adsubtitle 
+			display: flex 
+			justify-content: center 
+	.undercover__facts--mex 
+		.adsubtitle 
+			display: flex 
+			justify-content: center 
+
+.menupg__container 
+	position: relative 
+	width: 90% 
+	margin: 95px auto 
+	img 
+		width: 100% 
+		height: 600px 
+		object-fit: cover 
+		object-position: bottom 
+	.heading 
+		color: blanchedalmond 
+		position: absolute 
+		top: 15% 
+		width: 100% 
+		text-align: center 
+		font-size: 3rem 
+		background: none 
+	.subheader 
+		color: blanchedalmond 
+		position: absolute 
+		top: 35% 
+		left: 50% 
+		transform: translateX(-50%) 
+		text-align: center 
+		font-size: 1.5rem 
+		background: rgba(0,0,0,0.4) 
+		padding: 15px 
+        
+section 
+	.menupg__container 
+		a 
+			position: absolute 
+			text-decoration: none 
+			border: 3px solid blanchedalmond 
+			padding: 15px 
+			top: 46% 
+			left: 50% 
+			transform: translateX(-50%) 
+			background: none 
+			&:visited 
+				color: #000 
+			&:hover 
+				background: #E5CD8B 
+				transition: 0.6s 
